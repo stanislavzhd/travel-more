@@ -1,1 +1,408 @@
 @import "layout.scss";
+
+.visually-hidden {
+    position: absolute;
+    left: -9999999px;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff
+}
+
+p{
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.ba-travel__all{
+    padding: 20px;
+}
+
+.ba-travel-button{
+    width: 225px;
+    height: 60px;
+    background-color: #496bfe;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.ba-travel-hero{
+    width: 100%;
+    max-width: 1770px;
+    height: 739px;
+    background: {
+        image: url(../images/hero.jpg);
+        size: cover;
+        repeat: no-repeat; 
+    }
+}
+
+.ba-travel-block{
+    padding-top: 260px;
+    font-family: 'Josefin Sans', sans-serif; 
+    text-align: center;
+
+    &__headline{
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+    &__subtitle{
+        font-size: 1.375rem;
+        font-weight: 300;
+        color: #fff;
+        margin: 0;
+        letter-spacing: 3px;
+        padding-bottom: 3.4375rem;
+    }
+
+    &__form{
+        display: flex; 
+        justify-content: center; 
+    }
+
+    &__input{
+        height: 60px;
+        padding: 1em;
+        border: 1px solid #e5e5e5;
+        border-right: none;
+        width: 500px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__button{
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        border: 2px solid transparent;
+        background-color: #5474fd;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: .875rem;
+        padding: 0 2em;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    &__scroll{
+        padding-top: 7.5rem;
+        color: #d3d1d1;
+    }
+
+    &__scroll-img{
+        width: 15px;
+        height: 9px;
+    }
+}
+
+.ba-travel-header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #5474fd;
+    
+}
+
+.ba-travel-header__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.ba-travel__logo{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.ba-travel-menu{
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item{
+        list-style-type: none;
+        text-transform: uppercase;
+        color: #fff;
+        padding-left: 45px;
+    }
+}
+
+// about
+
+.ba-travel-about{
+    height: 685px;
+    background: {
+        image: url(../images/about.jpg);
+        size: cover;
+        repeat: no-repeat; 
+    }
+
+    &__block{
+        display: flex;
+    }
+
+    &__left{
+        max-width: 50%;
+        padding-top: 12.1875rem;
+    }
+
+    &__title{
+        font-size: 2.25rem;
+        color: #fff;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__info{
+        color: #d3d1d1;
+        line-height: 1.625em;
+        letter-spacing: 1px;
+        padding-top: 4.0625rem;
+        padding-bottom: 2.8125rem;
+        margin: 0;
+    }
+
+    &__right{
+        max-width: 50%;
+        padding-top: 7.5rem;
+        padding-left: 5rem;
+    }
+}
+
+.image{
+    padding-left: 7.5rem;
+}
+
+// infographic
+
+.ba-travel-infographic{
+    height: 336px;
+    background-color: #333333;
+
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__search{
+        text-align: center;
+        width: 33%;
+        padding-top: 6.125rem;
+    }
+
+    &__search-img{
+        width: 58px; 
+        height: 57px;
+    }
+
+    &__checked-img{
+        width: 60px; 
+        height: 61px;
+    }
+
+    &__like-img{
+        width: 62px; 
+        height: 59px;
+    }
+
+    &__info{
+        font-size: 2.25rem;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+// hotel
+
+.ba-travel-about-hotel{
+    position: relative;
+    height: 700px;
+    background: {
+        image: url(../images/hotel1.jpg);
+        size: cover;
+        repeat: no-repeat; 
+    }
+
+    &__block{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        width: 542px;
+        height: 371px;
+        background-color: rgba(0,0,0, 0.8);
+        margin-top: 14.375rem;
+        color: #d3d1d1;
+        padding-left: 45px;
+        padding-top: 33px;
+    }
+
+    &__country{
+        font-size: 1.25rem;
+        letter-spacing: 0.75px;
+    }
+
+    &__title{
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+
+    &__info{
+        line-height: 1.625em;
+        padding-bottom: 2.875rem;
+    }
+}
+
+// hotel 2
+
+.flex{
+    display: flex;
+}
+
+.ba-travel-about-hotel2{
+    position: relative;
+    height: 700px;
+    padding-top: 14.375rem;
+    background: {
+        image: url(../images/hotel2.jpg);
+        size: cover;
+        repeat: no-repeat; 
+    }
+
+    &__block-right{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        right: 20.4375rem;
+        width: 542px;
+        height: 371px;
+        background-color: rgba(0,0,0, 0.8);
+        margin-left: auto;
+        color: #d3d1d1;
+        padding-left: 45px;
+        padding-top: 33px;
+    }
+}
+
+// feedback
+
+.ba-travel-feedback{
+    position: relative;
+    display: flex;
+    height: 730px;
+    background: {
+        image: url(../images/feedback.jpg);
+        size: cover;
+        repeat: no-repeat; 
+    }
+
+    &__title{
+        padding-top: 6.625rem;
+        padding-bottom: 5.875rem;
+        font-size: 2.25rem;
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__content{
+        background-color: #333333;
+        height: 285px;
+        padding: 3.125rem 3.75rem 0 4.0625rem;
+    }
+
+    &__name{
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 0;
+        padding: 1.5rem 0;
+        color: #d3d1d1;
+        font-weight: 300;
+    }
+
+    &__info{
+        line-height: 1.625em;
+        padding-bottom: 2.875rem;
+        color: #d3d1d1;
+    }
+}
+
+.ba-travel-feedback__user{
+    display: flex;
+    align-items: center;
+}
+
+// social
+
+.ba-travel-footer{
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    display: flex;
+    height: 265px;
+    background-color: #232323;
+
+    &__block{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 170px;
+        text-align: center;
+        padding-top: 7.1875rem;
+    }
+
+    &__headline{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    &__subtitle{
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: #d3d1d1;
+        letter-spacing: 1px;
+    }
+}
+
+.ba-about__social_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
